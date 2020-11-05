@@ -34,6 +34,8 @@ SECTIONS {
         code_80082074.o(.text)
         xlObject.o(.text)
         code_800825B0.o(.text)
+        ios.o(.text)
+        code_800B9720.o(.text)
         *(.text) 
     }
 
