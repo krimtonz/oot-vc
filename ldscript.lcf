@@ -32,6 +32,8 @@ SECTIONS {
         code_80042064.o(.text)
         rom.o(.text)
         code_800440A8.o(.text)
+        library.o(.text)
+        code_8005E29C.o(.text)
         xlFile.o(.text)
         xlText.o(.text)
         xlList.o(.text)
