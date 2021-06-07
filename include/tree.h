@@ -33,7 +33,7 @@ struct recomp_node_s{
     /* 0x002C */ u32 size;
     /* 0x0030 */ s32 alloc_type;
     /* 0x0034 */ s32 unk_0x34;
-    /* 0x0038 */ u32 unk_0x38;
+    /* 0x0038 */ s32 unk_0x38;
     /* 0x003C */ recomp_node_t* parent;
     /* 0x0040 */ recomp_node_t* left;
     /* 0x0044 */ recomp_node_t* right;
@@ -52,13 +52,12 @@ typedef struct {
     /* 0x006C */ recomp_node_t* ovl_root;
     /* 0x0070 */ s32 unk_0x70;
     /* 0x0074 */ s32 unk_0x74;
-    /* 0x0078 */ u32 unk_0x78;
+    /* 0x0078 */ u32 root_to_clean;
     /* 0x007C */ recomp_node_t* unk_0x7C;
     /* 0x0080 */ u32 unk_0x80;
 } recomp_tree_t; // size = 0x84;
 
-s32 treeKill(void *cpu);
 s32 treeSearchNode(recomp_node_t *tree, s32 addr, recomp_node_t **out_node);
-s32 treeKillRange(void*,recomp_node_t*,s32,s32);
+//s32 treeKillRange(void*,recomp_node_t*,s32,s32);
 
 #endif

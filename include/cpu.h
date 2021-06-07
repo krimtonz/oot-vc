@@ -158,5 +158,7 @@ s32 cpuSetGetBlock(cpu_class_t* cpu, cpu_dev_t* dev, void* arg2);
 s32 cpuSetDevicePut(cpu_class_t* cpu, cpu_dev_t* dev, sb_func_t sb, sh_func_t sh, sw_func_t sw, sd_func_t sd);
 s32 cpuSetDeviceGet(cpu_class_t* cpu, cpu_dev_t* dev, lb_func_t lb, lh_func_t lh, lw_func_t lw, ld_func_t ld);
 s32 cpuGetAddressBuffer(cpu_class_t *cpu, void **buffer, u32 addr);
+s32 func_80031D4C(cpu_class_t *cpu, recomp_node_t *node, s32 arg2);
+extern u32 reg_map[];
 
 #endif
